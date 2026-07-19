@@ -1,0 +1,50 @@
+package_name: mirna-five-lens-panel-workbuddy
+package_version: 0.1.0-public-candidate
+status: github_public_candidate
+release_channel: prerelease
+public_release: false
+remote_push_performed: false
+generated_at: 2026-07-19T15:53:46+08:00
+evidence_cutoff: 2026-07-17
+skill_entry: skills/mirna-five-lens-panel/SKILL.md
+install_archive: dist/mirna-five-lens-panel-workbuddy.zip
+license: MIT
+nuwa:
+  repository: https://github.com/alchaincyf/nuwa-skill
+  commit: 72857dc720f4d1dd3e68a40a544341dfc65ea33e
+  license_file: third-party-licenses/NUWA-MIT.txt
+lenses:
+  - id: michael-axtell-plant-mirna-lens
+    status: validated
+    score: 93
+    hard_failures: 0
+  - id: xuemei-chen-plant-mirna-lens
+    status: validated
+    score: 96
+    hard_failures: 0
+  - id: blake-meyers-plant-small-rna-lens
+    status: validated
+    score: 95
+    hard_failures: 0
+  - id: james-carrington-rna-silencing-lens
+    status: validated
+    score: 98
+    hard_failures: 0
+  - id: hailing-jin-cross-kingdom-rna-lens
+    status: supervised_preview
+    authoritative_source_status: needs_review
+    score: 92
+    hard_failures: 0
+    unresolved_regressions: [JIN-A03, JIN-A04, JIN-A06, JIN-S01]
+excluded_components:
+  - david-bartel-mirna-mechanism-lens
+  - mirna-evidence-auditor
+  - mirna-expert-router
+distribution_rules:
+  expert_impersonation: forbidden
+  expert_vote_as_evidence: forbidden
+  raw_sequencing_data: forbidden
+  local_model_or_training: forbidden
+  copyrighted_pdf_redistribution: forbidden
+  remove_supervised_preview_label: forbidden
+authoritative_project_release_unchanged: true

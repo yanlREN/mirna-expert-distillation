@@ -1,0 +1,51 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Credentials and local configuration
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12
+credentials*
+secrets*
+
+# Raw bioinformatics data and large intermediates
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.sam
+*.cram
+*.sra
+*.bigwig
+*.bw
+
+# Model and index artifacts
+*.safetensors
+*.gguf
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.index
+
+# Papers, caches, logs and temporary files
+*.pdf
+cache/
+.cache/
+logs/
+tmp/
+temp/
+__pycache__/
+*.pyc
+
+# Local WorkBuddy state
+.workbuddy/

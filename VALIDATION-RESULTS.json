@@ -1,0 +1,26 @@
+{
+  "package": "mirna-five-lens-panel-workbuddy",
+  "version": "0.1.0-public-candidate",
+  "overall": "PASS",
+  "skill_entry": "skills/mirna-five-lens-panel/SKILL.md",
+  "embedded_lenses": {
+    "michael-axtell-plant-mirna-lens": "validated",
+    "xuemei-chen-plant-mirna-lens": "validated",
+    "blake-meyers-plant-small-rna-lens": "validated",
+    "james-carrington-rna-silencing-lens": "validated",
+    "hailing-jin-cross-kingdom-rna-lens": "supervised_preview"
+  },
+  "jsonl_files": 10,
+  "jsonl_records": 398,
+  "local_markdown_links_missing": 0,
+  "forbidden_files": [],
+  "private_key_hits": [],
+  "archive": "dist/mirna-five-lens-panel-workbuddy.zip",
+  "archive_members": 88,
+  "archive_sha256": "0e368ef46406a4e1c72b4ca0a1d8bf73981099e1b9029b5ab58b5eb14490f551",
+  "findings": [],
+  "remote_push_performed": false,
+  "authoritative_release_unchanged": true,
+  "checksum_records": 103,
+  "checksum_verified": 103
+}
