@@ -1,0 +1,4 @@
+interface:
+  display_name: "miRNA 五视角科学面板"
+  short_description: "用五个公开科研框架并列分析同一问题、文本、证据缺口和后续问题"
+  default_prompt: "请分别用 Axtell、Chen、Meyers、Carrington 和 Jin 的公开科研框架分析该问题，列出各自关注点、判断边界、证据缺口、共同点、分歧与下一步问题。"
