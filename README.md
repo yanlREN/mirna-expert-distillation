@@ -23,6 +23,16 @@ Carrington, Jin, their coauthors, and relevant independent groups. See the
 The project does not claim that the named researchers reviewed or endorsed the
 tool. Automated perspectives do not constitute human expert validation.
 
+## Nuwa methodology
+
+This project was developed using the methodology and workflow framework provided
+by [Nuwa (Skill Creation Method)](https://github.com/alchaincyf/nuwa-skill),
+pinned to commit `72857dc720f4d1dd3e68a40a544341dfc65ea33e`, with domain-specific
+adaptations for miRNA literature analysis. These adaptations add scientific
+evidence boundaries, source-first citation checks, miRNA entity disambiguation,
+regression tests, and safeguards against researcher impersonation. See
+[NOTICE.md](NOTICE.md) for full attribution and licensing information.
+
 ## What it does
 
 - Analyzes scientific questions, abstracts, results passages, figure legends,

@@ -13,6 +13,15 @@
 同时结合其他团队文献；完整对应关系见[文献归属](skills/mirna-five-lens-panel/references/literature-attribution.md)。
 本项目不声称相关研究者参与了本工具审核或背书，自动化视角不构成人工专家验证。
 
+## Nuwa方法框架
+
+本项目使用 [Nuwa（女娲·Skill造人术）](https://github.com/alchaincyf/nuwa-skill)
+提供的方法与工作流框架开发，固定于commit
+`72857dc720f4d1dd3e68a40a544341dfc65ea33e`，并针对miRNA文献分析进行了领域适配。
+适配内容包括科学证据边界、原始来源优先的引文核验、miRNA实体消歧义、
+回归测试以及禁止研究者冒充的约束。完整归属和许可说明见
+[NOTICE.md](NOTICE.md)。
+
 ## 它能做什么
 
 - 分析科学问题、论文摘要、结果段、图注或研究设想；
