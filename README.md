@@ -47,7 +47,7 @@
 ├── RELEASE-MANIFEST.yaml
 ├── CHECKSUMS.sha256
 ├── docs/
-├── reviewer-supplement/          # 给审稿人和编辑的方法与审计证据
+├── methods-and-qc/               # 方法、质量控制与审计记录
 ├── skills/
 │   └── mirna-five-lens-panel/       # 自包含 WorkBuddy Skill
 ├── dist/
@@ -134,9 +134,9 @@ macOS/Linux: ~/.workbuddy/skills/mirna-five-lens-panel
 
 详细结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
 
-## 给审稿人和编辑的补充材料
+## 方法与质量控制材料
 
-见[补充材料索引](reviewer-supplement/README.md)。该目录区分历史报告、
+见[方法与质量控制索引](methods-and-qc/README.md)。该目录区分历史报告、
 可复核的方法材料和仍待完成的人工验证/数据划分审计，不把程序PASS称为生物学准确率。
 
 ## 上传 GitHub 前

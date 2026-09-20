@@ -59,7 +59,7 @@ accuracy. This package does not establish the full implemented cross-model
 disagreement decision table or disagreement counts; those must be documented
 from the final fusion implementation before asserting a complete resolution rule.
 
-## Reviewer response evidence matrix
+## Evidence and remaining validation matrix
 
 | Concern | Evidence available | Remaining requirement |
 |---|---|---|

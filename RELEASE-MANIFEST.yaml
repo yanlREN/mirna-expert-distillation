@@ -49,7 +49,7 @@ distribution_rules:
   remove_supervised_preview_label: forbidden
 authoritative_project_release_unchanged: true
 
-editorial_update_date: 2026-09-20
-editorial_update: neutral_expert_perspective_display_names
+documentation_update_date: 2026-09-20
+documentation_update: neutral_expert_perspective_display_names_and_methods_qc
 model_weight_training: false
 human_expert_validation_claimed: false

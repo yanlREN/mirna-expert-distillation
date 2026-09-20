@@ -66,7 +66,7 @@ stopping points.
 ├── RELEASE-MANIFEST.yaml
 ├── CHECKSUMS.sha256
 ├── docs/
-├── reviewer-supplement/
+├── methods-and-qc/
 ├── skills/
 │   └── mirna-five-lens-panel/       # self-contained WorkBuddy Skill
 ├── dist/
@@ -171,11 +171,11 @@ or restricted full text to an untrusted model service. See [SECURITY.md](SECURIT
 
 See [docs/VALIDATION.md](docs/VALIDATION.md) for the exact scope and limitations.
 
-## Supplement for reviewers and editors
+## Methods and quality-control materials
 
-The [reviewer supplement](reviewer-supplement/README.md) separates archived
-reports, reproducible methods evidence, and validation/split audits that remain
-outstanding. A programmatic PASS is not presented as biological accuracy.
+The [methods and quality-control directory](methods-and-qc/README.md) separates
+archived reports, reproducible methods evidence, and validation/split audits
+that remain outstanding. A programmatic PASS is not presented as biological accuracy.
 
 ## Before redistributing
 

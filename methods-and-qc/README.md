@@ -1,4 +1,4 @@
-# Reviewer evidence supplement — release candidate
+# Methods and quality-control evidence — release candidate
 
 Prepared 2026-09-20 from archived project reports. This is a documentation and
 reproducibility supplement, not a new corpus release or an independent human
@@ -13,7 +13,7 @@ be interpreted with the limitations below.
 - `protocols/qa/`: generation, independent review, revision and Nuwa application prompts.
 - `protocols/relations/`: evidence adjudication policy, DeepSeek prompt and schemas.
 - `reference-code/`: historical QA validator and structural sampling audit.
-- [Methods, limits and reviewer questions](METHODS_AND_LIMITATIONS.md).
+- [Methods, limits and remaining validation questions](METHODS_AND_LIMITATIONS.md).
 - `SOURCE_INVENTORY.json`: SHA256 of each copied source artifact.
 
 The repository-level CHECKSUMS.sha256 covers this supplement. Dataset hashes in
@@ -25,7 +25,7 @@ large datasets were revalidated during this documentation-only preparation.
 The files document evidence-only prompts, executable structural checks, corpus
 coverage and release accounting. They do **not** demonstrate independent expert
 accuracy, absence of semantic errors, or a publication-disjoint training/test split.
-Those require additional evidence before being asserted in a reviewer response.
+Those require additional evidence before being asserted in publications or releases.
 
 ## Publication boundary
 
