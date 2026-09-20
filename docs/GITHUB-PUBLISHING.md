@@ -17,7 +17,7 @@
 2. 不要自动添加另一个 README、LICENSE 或 `.gitignore`，因为本目录已提供。
 3. 使用 GitHub 网页的 Upload files 上传本目录全部内容。
 4. 检查目录层级，确保仓库根目录直接看到 `README.md` 和 `skills/`。
-5. 创建首个 Release，标签可用 `v0.1.0-public-candidate`。
+5. 创建或更新 Release，本次候选版标签可用 `v0.1.1-public-candidate`。
 6. 勾选 **Set as a pre-release**。
 7. 上传 `dist/mirna-five-lens-panel-workbuddy.zip` 和 `CHECKSUMS.sha256` 作为附件。
 8. 在 Release 说明中再次写明“四个 validated + Jin supervised_preview”。

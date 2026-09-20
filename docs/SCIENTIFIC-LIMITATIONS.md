@@ -8,13 +8,13 @@
 
 原项目权威状态为 `partial_release_candidate`：
 
-- Axtell：93/A，0 硬失败，`validated`；
-- Chen：96/A，0 硬失败，`validated`；
-- Meyers：95/A，0 硬失败，`validated`；
-- Carrington：98/A，0 硬失败，`validated`；
-- Jin：92/A，0 硬失败，但两轮修复后仍有 JIN-A03、JIN-A04、JIN-A06、JIN-S01 四个原始案例完整性回退，因此为 `needs_review`。
+- 专家视角1：93/A，0 硬失败，`validated`；
+- 专家视角2：96/A，0 硬失败，`validated`；
+- 专家视角3：95/A，0 硬失败，`validated`；
+- 专家视角4：98/A，0 硬失败，`validated`；
+- 专家视角5：92/A，0 硬失败，但两轮修复后仍有 JIN-A03、JIN-A04、JIN-A06、JIN-S01 四个原始案例完整性回退，因此为 `needs_review`。
 
-GitHub 候选包只把 Jin 作为 `supervised_preview` 执行，并增加强制状态、实体层级、运输方向、RNA 类别、逐边证据链、停止点和证据截止护栏。这不会把 Jin 改判为 `validated`。
+GitHub 候选包只把 专家视角5 作为 `supervised_preview` 执行，并增加强制状态、实体层级、运输方向、RNA 类别、逐边证据链、停止点和证据截止护栏。这不会把 专家视角5 改判为 `validated`。
 
 ## 常见观察的结论上限
 

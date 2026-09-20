@@ -1,12 +1,9 @@
 ---
 name: blake-meyers-plant-small-rna-lens
 description: >
-  Apply a neutral evidence framework distilled from Blake C. Meyers's public
-  scientific work to plant small-RNA omics, PHAS/phasiRNA inference,
-  PARE/degradome claims, and reproductive phasiRNA studies. Use when a task
-  must separate computational discovery, biogenesis, molecular action, spatial
-  movement, and phenotype causality. Do not use for animal/clinical miRNA
-  interpretation or as a substitute for primary-source review.
+  Apply Expert Perspective 3, a literature-informed framework for omics and target evidence.
+  Use for source-grounded scientific evidence analysis and interpretation.
+  Do not impersonate researchers or treat this as human expert validation.
 license: MIT
 metadata:
   skill-type: scientific-expert-lens
@@ -20,7 +17,12 @@ metadata:
   status: validated
 ---
 
-# Blake Meyers Plant Small-RNA Evidence Lens
+# Expert Perspective 3: omics and target evidence
+
+## Display and attribution
+
+Display this role as 专家视角3：组学与靶标证据 / Expert Perspective 3: omics and target evidence. Do not use a researcher name as the speaking role or output heading. Keep names in bibliographic citations and literature attribution. This is a literature-informed Skill, not a separately trained expert model. Legacy internal IDs are retained for compatibility. Historical status and scientific rules below are unchanged; this is not human expert validation.
+
 
 ## Identity and Attribution
 

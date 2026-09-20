@@ -1,0 +1,93 @@
+{
+  "active_evidence_nonempty_rate": 1.0,
+  "active_relation_instances": 7007,
+  "aggregated_relations": 5129,
+  "all_candidates": 17940,
+  "api_key_recorded": false,
+  "batch1_candidate_lineage": {
+    "raw_candidates": 39136,
+    "reviewed_candidates": 3824,
+    "sha256": "0dd923207ff2ec5f40011a2393d9c943d7fe77cce7b20e229b91a2c27ba9ff38",
+    "status": "BATCH1_FROZEN_CANDIDATE_LINEAGE_VERIFIED"
+  },
+  "batch_candidate_counts": {
+    "batch1": 3824,
+    "batch2": 5165,
+    "batch3": 8951
+  },
+  "batch_partition": {
+    "batch1": 500,
+    "batch2": 1000,
+    "batch3": 3168
+  },
+  "batch_qc_sha256": {
+    "batch1": "965c546bf28f5f9084de7c3aba650b39c42a0339cf3bd0ccee791e41f1a6a629",
+    "batch2": "5c0646fa25151ec4574879bf5ed9540e743b350cbf136c5a4860b44c44f51f6b",
+    "batch3": "635a81892b4b7854933e28b25f8567dc903e6ff1415a8e2b9823093ab1732f8d"
+  },
+  "batch_qc_status": {
+    "batch1": "BATCH1_VALIDATED",
+    "batch2": "BATCH2_FINALIZED",
+    "batch3": "BATCH3_FINALIZED"
+  },
+  "batch_release_sha_ledgers": {
+    "batch1": {
+      "entries": 7,
+      "sha256": "29d8c22afd363b5ae6222c25f05d694dea186ece3fa339c90b6c4e39f9693ff0",
+      "status": "PASS"
+    },
+    "batch2": {
+      "entries": 6,
+      "sha256": "d00ba067d61630426ae5e6db85433fa72985242290c4ace03a77eb231f757903",
+      "status": "PASS"
+    },
+    "batch3": {
+      "entries": 6,
+      "sha256": "38c83a7f3b6d87653fd55ea0295c6e11e5fcad14534ae0e8a33913efa2fe372a",
+      "status": "PASS"
+    }
+  },
+  "candidate_pending": 0,
+  "duplicate_paper_id": 0,
+  "exact_tuple_evidence_check": "PASS_PER_BATCH_DETERMINISTIC_REPLAY",
+  "exact_tuple_evidence_violations": 0,
+  "gold_read": false,
+  "human_label_read": false,
+  "missing_paper_status": 0,
+  "next_step": "QA_PAIR_GENERATION",
+  "ontology_violations": 0,
+  "operational_pending": 0,
+  "paper_registry_rows": 4668,
+  "paper_status_distribution": {
+    "DUPLICATE_FOLDED": 1,
+    "EXCLUDED_WITH_REASON": 2,
+    "NO_SUPPORTED_RELATION": 2526,
+    "RELATIONS_ACCEPTED": 2095,
+    "SOURCE_RECOVERED_AND_PROCESSED": 44
+  },
+  "pending_paper": 0,
+  "previous_consensus_read": false,
+  "qa_context_records": 4668,
+  "qa_negative_records": 10933,
+  "qa_negative_schema_nonempty": "PASS",
+  "qa_positive_records": 7007,
+  "qa_positive_schema_nonempty": "PASS",
+  "raw_candidate_lineage_records": 208494,
+  "raw_candidate_lineage_status": "FULL_CORPUS_CANDIDATE_LINEAGE_PASS",
+  "raw_candidate_lineage_unique_ids": 208494,
+  "rejected_relations": 10933,
+  "relation_allowlist_violations": 0,
+  "relation_scope_violations": 0,
+  "release_version": "phase6.4C-full-corpus-relation-release-v1",
+  "responds_to_direction_violations": 0,
+  "specificity_violations": 0,
+  "status": "PASS",
+  "targets_directness_violations": 0,
+  "terminal_uncertain": 828,
+  "unique_evidence_id": 7007,
+  "unique_papers": 4668,
+  "unique_relation_id": 17940,
+  "unsupported_family_member_promotion": 0,
+  "validated_at_utc": "2026-08-03T08:05:09.489369+00:00",
+  "wrong_direction_active_relation": 0
+}

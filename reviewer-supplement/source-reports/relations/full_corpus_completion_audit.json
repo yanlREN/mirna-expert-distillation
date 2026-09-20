@@ -1,0 +1,28 @@
+{
+  "active": 7007,
+  "aggregated": 5129,
+  "all_candidates": 17940,
+  "audited_at_utc": "2026-08-03T08:05:46.189395+00:00",
+  "batch_partition": {
+    "batch1": 500,
+    "batch2": 1000,
+    "batch3": 3168
+  },
+  "candidate_ledger_entries": 7,
+  "duplicate_relation_ids": 0,
+  "next_step": "QA_PAIR_GENERATION",
+  "operational_pending": 0,
+  "papers": 4668,
+  "pending_candidates": 0,
+  "pending_papers": 0,
+  "qa_context": 4668,
+  "qa_negative": 10933,
+  "qa_positive": 7007,
+  "raw_candidate_lineage": 208494,
+  "raw_response_parse_violations": 0,
+  "rejected": 10933,
+  "release_ledger_entries": 24,
+  "status": "FULL_CORPUS_COMPLETION_AUDIT_PASS",
+  "targets_directness_violations": 0,
+  "terminal_uncertain": 828
+}

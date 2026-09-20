@@ -1,0 +1,17 @@
+{
+  "protocol_id": "MIRNA_QA_V4FLASH_COVERAGE_COMPLETION_V1",
+  "adjudicator": "CODEX_LUNA_MAX_OFFLINE_COORDINATOR",
+  "api_request_count": 0,
+  "sample_tasks": 638,
+  "sample_qa_records": 3589,
+  "sample_pass": 3589,
+  "sample_fail": 0,
+  "sample_pass_rate": 1.0,
+  "terminal_states": {
+    "ACCEPTED_QA": 12187,
+    "GENERATION_FAILED_EXHAUSTED": 813,
+    "NO_VALID_QA_AFTER_REVIEW": 1
+  },
+  "errors": [],
+  "timestamp_utc": "2026-08-06T11:29:02.612878+00:00"
+}

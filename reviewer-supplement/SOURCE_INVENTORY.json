@@ -1,0 +1,110 @@
+{
+  "prepared": "2026-09-20",
+  "artifacts": [
+    {
+      "file": "source-reports/qa/full_corpus_coverage_audit_v3.md",
+      "sha256": "4f756bc3ed50e9fd1e55af69fb1a037675f3791e37f62e8927d4cd3611bb44a4",
+      "copied_verbatim": true
+    },
+    {
+      "file": "source-reports/qa/full_corpus_quality_report_v2.md",
+      "sha256": "907db55c054abefc07b397f854e554f034fe04cc5504c8b78efe6cca6a74fd79",
+      "copied_verbatim": true
+    },
+    {
+      "file": "source-reports/qa/incremental_generation_report.md",
+      "sha256": "40f3e3390fcf61285cf5b3bfca3de722887619a0ad3bbc04b812392c1767db4b",
+      "copied_verbatim": true
+    },
+    {
+      "file": "source-reports/qa/codex_luna_sample_v1.md",
+      "sha256": "9a019016b0e9d3a1ed8d39b2372017c36d08f519439714f57f2e627cb2fe5598",
+      "copied_verbatim": true
+    },
+    {
+      "file": "source-reports/qa/full_corpus_release_manifest_v2.json",
+      "sha256": "9851879470be3a16fea32c501e6cdb6c7ccfca454705f7b0f60d60a37a3aad15",
+      "copied_verbatim": true
+    },
+    {
+      "file": "source-reports/qa/codex_luna_sample_v1.json",
+      "sha256": "c3ab4d5c0e6b0a36d1fc838c02103b3f14abcfc7420ab8cb354e07faed2e61c8",
+      "copied_verbatim": true
+    },
+    {
+      "file": "source-reports/relations/full_corpus_relation_extraction_completion_report.md",
+      "sha256": "cbcb00034667de9e0dcf6c87834918c08db0e928426774585bfd03425c28940e",
+      "copied_verbatim": true
+    },
+    {
+      "file": "source-reports/relations/full_corpus_candidate_lineage_report.md",
+      "sha256": "6dd0ea41f52ec81a10e07bff4bae2fb455bcf15f23eb5b2bc0cb2ce8e353999a",
+      "copied_verbatim": true
+    },
+    {
+      "file": "source-reports/relations/full_corpus_completion_audit.json",
+      "sha256": "b57c70b6d7e253969aa64be5ebe3a58280d38a72411c60d9219b265f7a1d49e4",
+      "copied_verbatim": true
+    },
+    {
+      "file": "source-reports/relations/full_corpus_relation_extraction_final_qc.json",
+      "sha256": "1fccbca4e8146a9a6bc61a2e43c520754b08525be902f77bb78e2b6596ed51a3",
+      "copied_verbatim": true
+    },
+    {
+      "file": "source-reports/relations/full_corpus_candidate_lineage_qc.json",
+      "sha256": "1bf79e0d3e5463b5cf7f4451c6cb33986940a40ef0d37b267fa701300f732903",
+      "copied_verbatim": true
+    },
+    {
+      "file": "protocols/qa/generation_v1.md",
+      "sha256": "0a70e145a12e87445fa4025b743bd055511345902abb4ad8bf7bdc58ae137140",
+      "copied_verbatim": true
+    },
+    {
+      "file": "protocols/qa/review_v1.md",
+      "sha256": "dccf9a3cfc548373587a2c396b22103d5f32ca91fd87f367a96f14e25dfe0a14",
+      "copied_verbatim": true
+    },
+    {
+      "file": "protocols/qa/revision_v1.md",
+      "sha256": "a0c51c45784605324b986ea4ca113add81e4ea5087e5de0e5ad1100d3cb404bf",
+      "copied_verbatim": true
+    },
+    {
+      "file": "protocols/qa/nuwa_application_v1.md",
+      "sha256": "2c60d84713b13f5a6f44ce64ffe08c30362481f642f50c0d02b5ddebb82ae38f",
+      "copied_verbatim": true
+    },
+    {
+      "file": "protocols/relations/adjudication_policy.md",
+      "sha256": "61708854e823a255329b40bade608c86a591ad418f5b2db6163012bdb36e4f65",
+      "copied_verbatim": true
+    },
+    {
+      "file": "protocols/relations/deepseek_core_audit_prompt_v1.md",
+      "sha256": "78f9e8de989610e7b34141575e5649c236670c588085c54f1da442618fd0fce5",
+      "copied_verbatim": true
+    },
+    {
+      "file": "protocols/relations/deepseek_core_audit_provider_schema_v1.json",
+      "sha256": "32eb4bbd3d8c1c327525591df713be42ec0427efd48c927389909d6a406ebccd",
+      "copied_verbatim": true
+    },
+    {
+      "file": "protocols/relations/deepseek_core_audit_final_schema_v1.json",
+      "sha256": "69816f392a1e771a3432dc4350e514d2e45f2fd68f0879e03962b0453a7a73ed",
+      "copied_verbatim": true
+    },
+    {
+      "file": "reference-code/run_codex_luna_sample_v1.py",
+      "sha256": "44d90d0fcc09b41c99f132638117f42b4da68859023206993bb3a22720a565c1",
+      "copied_verbatim": true
+    },
+    {
+      "file": "reference-code/validate_incremental_worker_v1.py",
+      "sha256": "025b45645eebacc1911e10c6f7e7988d94e6a9e64748e488a3c232bef4d43471",
+      "copied_verbatim": true
+    }
+  ]
+}

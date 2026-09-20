@@ -1,8 +1,17 @@
 # miRNA Five-Lens Scientific Panel for WorkBuddy
 
-一个面向 miRNA、植物 small RNA、RNA silencing 与跨界 RNA 问题的五视角科研分析 Skill。它会让同一问题依次经过 Axtell、Chen、Meyers、Carrington 和 Jin 五套公开研究框架，并保留各自关注点、证据边界、分歧与后续问题。
+[中文](README.md) | [English](README_EN.md)
 
-> **发布状态：GitHub 公开候选 / prerelease。** 四个 Lens 已通过本项目发布门禁；Jin Lens 仅为 `supervised_preview`，尚未通过正式发布门禁。这个状态必须在使用界面、输出和二次分发中保留。
+一个面向 miRNA、植物 small RNA、RNA silencing 与跨界 RNA 问题的五视角科研分析 Skill。它会让同一问题依次经过 专家视角1、专家视角2、专家视角3、专家视角4 和 专家视角5 五套公开研究框架，并保留各自关注点、证据边界、分歧与后续问题。
+
+> **发布状态：GitHub 公开候选 / prerelease。** 四个 Lens 保留历史项目内部验证状态（非人工专家确认）；专家视角5 Lens 仅为 `supervised_preview`，尚未通过正式发布门禁。这个状态必须在使用界面、输出和二次分发中保留。
+
+## 文献来源与命名
+
+本项目是文献引导的分析Skill，没有训练五个独立模型。姓名仅用于来源归属。
+五个视角主要参考Axtell、Chen、Meyers、Carrington、Jin及各自合作者的公开研究，
+同时结合其他团队文献；完整对应关系见[文献归属](skills/mirna-five-lens-panel/references/literature-attribution.md)。
+本项目不声称相关研究者参与了本工具审核或背书，自动化视角不构成人工专家验证。
 
 ## 它能做什么
 
@@ -19,24 +28,26 @@
 
 | Lens | 主要关注 | 状态 |
 |---|---|---|
-| Axtell | miRNA 身份、注释严格性、miRNA/siRNA 分类与实体层级 | `validated` |
-| Chen | 植物 miRNA 生物发生、加工、甲基化、AGO 装载与生命周期 | `validated` |
-| Meyers | small-RNA 组学、PARE/degradome、PHAS/phasiRNA 与可重复性 | `validated` |
-| Carrington | DCL/RDR/AGO、tasiRNA、病毒抑制子与 RNA silencing 通路 | `validated` |
-| Jin | 植物–病原跨界 RNA、载体/摄取、受体作用路径与因果链 | `supervised_preview` |
+| 专家视角1 | miRNA 身份、注释严格性、miRNA/siRNA 分类与实体层级 | `validated` |
+| 专家视角2 | 植物 miRNA 生物发生、加工、甲基化、AGO 装载与生命周期 | `validated` |
+| 专家视角3 | small-RNA 组学、PARE/degradome、PHAS/phasiRNA 与可重复性 | `validated` |
+| 专家视角4 | DCL/RDR/AGO、tasiRNA、病毒抑制子与 RNA silencing 通路 | `validated` |
+| 专家视角5 | 植物–病原跨界 RNA、载体/摄取、受体作用路径与因果链 | `supervised_preview` |
 
-`supervised_preview` 不等于“第五位已验证专家”。Jin 在独立 N5 回归中仍有 4 个完整性回退案例，因此面板强制显示状态、证据截止日期和逐边停止点。
+`supervised_preview` 不等于“第五位已验证专家”。专家视角5 在独立 N5 回归中仍有 4 个完整性回退案例，因此面板强制显示状态、证据截止日期和逐边停止点。
 
 ## 仓库结构
 
 ```text
 .
 ├── README.md
+├── README_EN.md
 ├── LICENSE
 ├── NOTICE.md
 ├── RELEASE-MANIFEST.yaml
 ├── CHECKSUMS.sha256
 ├── docs/
+├── reviewer-supplement/          # 给审稿人和编辑的方法与审计证据
 ├── skills/
 │   └── mirna-five-lens-panel/       # 自包含 WorkBuddy Skill
 ├── dist/
@@ -83,7 +94,7 @@ macOS/Linux: ~/.workbuddy/skills/mirna-five-lens-panel
 
 [粘贴问题、摘要、结果或图注]
 
-请分别给出 Axtell、Chen、Meyers、Carrington 和 Jin 五个 Lens 的：
+请分别给出 专家视角1、专家视角2、专家视角3、专家视角4 和 专家视角5 五个 Lens 的：
 1. 适用性；
 2. 最关注的问题；
 3. 当前证据能支持到哪里；
@@ -91,7 +102,7 @@ macOS/Linux: ~/.workbuddy/skills/mirna-five-lens-panel
 5. 最值得追问的 2–4 个问题。
 
 最后列出共同点、互补关注、必须保留的分歧和最能改变结论的下一步证据。
-不要用多数投票决定科学结论；Jin 必须标记为 supervised_preview。
+不要用多数投票决定科学结论；专家视角5 必须标记为 supervised_preview。
 ```
 
 更多模板见 [docs/USAGE.md](docs/USAGE.md)。
@@ -119,19 +130,24 @@ macOS/Linux: ~/.workbuddy/skills/mirna-five-lens-panel
 - JSONL 可解析，引用文件闭包完整；
 - 包内没有 PDF、原始测序数据、模型权重、缓存或凭据；
 - ZIP 内容和 SHA-256 在生成时重新核验；
-- 原项目权威状态仍是 `partial_release_candidate`，本仓库是独立的 GitHub 公开候选，不把 Jin 改判为 validated。
+- 原项目权威状态仍是 `partial_release_candidate`，本仓库是独立的 GitHub 公开候选，不把 专家视角5 改判为 validated。
 
 详细结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
+
+## 给审稿人和编辑的补充材料
+
+见[补充材料索引](reviewer-supplement/README.md)。该目录区分历史报告、
+可复核的方法材料和仍待完成的人工验证/数据划分审计，不把程序PASS称为生物学准确率。
 
 ## 上传 GitHub 前
 
 1. 完整上传本目录内容，不要只上传 `SKILL.md`。
 2. 首次 GitHub Release 标为 **Pre-release**，不要标为 production-ready。
 3. 将 `dist/mirna-five-lens-panel-workbuddy.zip` 与 `CHECKSUMS.sha256` 一起作为 Release assets。
-4. 保留 `LICENSE`、`NOTICE.md`、`RELEASE-MANIFEST.yaml` 和 Jin 的 `supervised_preview` 标记。
+4. 保留 `LICENSE`、`NOTICE.md`、`RELEASE-MANIFEST.yaml` 和 专家视角5 的 `supervised_preview` 标记。
 5. 不要加入论文 PDF、缓存、原始测序数据、模型文件或访问凭据。
 
-本项目不会自动创建 GitHub 仓库或推送远程。发布步骤见 [docs/GITHUB-PUBLISHING.md](docs/GITHUB-PUBLISHING.md)。
+发布与复核步骤见 [docs/GITHUB-PUBLISHING.md](docs/GITHUB-PUBLISHING.md)。
 
 ## 许可证与来源
 

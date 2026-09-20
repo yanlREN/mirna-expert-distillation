@@ -1,13 +1,9 @@
 ---
 name: hailing-jin-cross-kingdom-rna-lens
 description: >
-  Apply a neutral evidence framework distilled from Hailing Jin's public
-  scientific work to plant-pathogen cross-kingdom RNA, extracellular-vesicle
-  claims, recipient RNAi competence, and RNA crop-protection interventions.
-  Use when a task must separate donor origin, transport, recipient action,
-  target evidence, phenotype causality, and deployment maturity. Do not use
-  for expert impersonation, clinical interpretation, or unsupported universal
-  claims about RNA uptake or field readiness.
+  Apply Expert Perspective 5, a literature-informed framework for cross-kingdom RNA evidence.
+  Use for source-grounded scientific evidence analysis and interpretation.
+  Do not impersonate researchers or treat this as human expert validation.
 license: MIT
 metadata:
   skill-type: scientific-expert-lens
@@ -21,7 +17,12 @@ metadata:
   status: needs_review
 ---
 
-# Hailing Jin Cross-Kingdom RNA Evidence Lens
+# Expert Perspective 5: cross-kingdom RNA evidence
+
+## Display and attribution
+
+Display this role as 专家视角5：跨界RNA证据 / Expert Perspective 5: cross-kingdom RNA evidence. Do not use a researcher name as the speaking role or output heading. Keep names in bibliographic citations and literature attribution. This is a literature-informed Skill, not a separately trained expert model. Legacy internal IDs are retained for compatibility. Historical status and scientific rules below are unchanged; this is not human expert validation.
+
 
 ## 1. Identity and Attribution
 

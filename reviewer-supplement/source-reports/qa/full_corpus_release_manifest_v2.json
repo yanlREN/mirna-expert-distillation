@@ -1,0 +1,88 @@
+{
+  "accepted_qa_records": 70889,
+  "base_artifact_sha256": {
+    "release_manifest": "09e2df7ee559becb0e1e419ae0102b250766dd112d21a483410f135b617e1426",
+    "state": "ba201ee80a79e7e5932004789a4f5f7195c4be27b84b114c7ef049fb65109f47",
+    "task_registry": "fb92d7ad86eed79eaa98715f5150177b762eb58bceb0c49e775438bede44b03b"
+  },
+  "base_release": "BASE_QA_RELEASE_V1",
+  "base_task_records": 2825,
+  "coverage_completeness": {
+    "A_task_registry_processing_completeness": "COMPLETE",
+    "B_paper_coverage_completeness": "COMPLETE",
+    "C_section_coverage_completeness": "COMPLETE",
+    "D_final_qa_dataset_completeness": "COMPLETE"
+  },
+  "downstream_started": false,
+  "files": {
+    "full_corpus_task_registry_v2.jsonl": {
+      "bytes": 134254582,
+      "sha256": "3adb92ddfd41339020a5cd586ca5cde5ed9067179ea666f90addca8fac44cbd4"
+    },
+    "qa_base_v1.jsonl": {
+      "bytes": 5161009,
+      "sha256": "da257c35d785a586757be9e67929d06967f050f073a35fa2200bd2397e58fa5a"
+    },
+    "qa_full_corpus_rag_v2.jsonl": {
+      "bytes": 86624992,
+      "sha256": "7cfce8cdcedcd39fd979db929d88ac2380ba88b7f8e714a115612f15782c59b1"
+    },
+    "qa_full_corpus_sft_v2.jsonl": {
+      "bytes": 57675168,
+      "sha256": "dbb4a185fca8867d9e2e0e33e3edb4dd9d903078d680e4d214851f7f17568b7d"
+    },
+    "qa_full_corpus_v2.jsonl": {
+      "bytes": 124510646,
+      "sha256": "1e047e230d0bbebc1e0a82fa1739bcddfd8c4a09118fd2de2f909220b71811ac"
+    },
+    "qa_incremental_v1.jsonl": {
+      "bytes": 119349637,
+      "sha256": "b8128a1c0e6709e6a7f7ee79387d25d31c22fd0a0922d528620e883e00576363"
+    },
+    "qc/codex_luna_sample_v1.json": {
+      "bytes": 465,
+      "sha256": "c3ab4d5c0e6b0a36d1fc838c02103b3f14abcfc7420ab8cb354e07faed2e61c8"
+    },
+    "rejected_and_no_qa_records_v2.jsonl": {
+      "bytes": 354921,
+      "sha256": "189ea7134f49b6bcc8a3fde976e024c41080c0dacca484538fa450c452fa684c"
+    },
+    "reports/codex_luna_sample_v1.md": {
+      "bytes": 265,
+      "sha256": "9a019016b0e9d3a1ed8d39b2372017c36d08f519439714f57f2e627cb2fe5598"
+    },
+    "reports/formal_manifest_preflight_v1.md": {
+      "bytes": 294,
+      "sha256": "4ca2679a7a442edb346102b228d58089c1d71ed60f081e9450a7bb0bc39b75bf"
+    },
+    "reports/full_corpus_coverage_audit_v3.md": {
+      "bytes": 4410,
+      "sha256": "4f756bc3ed50e9fd1e55af69fb1a037675f3791e37f62e8927d4cd3611bb44a4"
+    },
+    "reports/full_corpus_quality_report_v2.md": {
+      "bytes": 195,
+      "sha256": "907db55c054abefc07b397f854e554f034fe04cc5504c8b78efe6cca6a74fd79"
+    },
+    "reports/incremental_canary_v9_report.md": {
+      "bytes": 900,
+      "sha256": "d506bc208cb621dd85b886b1879966ff1ff247a1fd4da6730ad333711985c9ca"
+    },
+    "reports/incremental_generation_report.md": {
+      "bytes": 6653,
+      "sha256": "40f3e3390fcf61285cf5b3bfca3de722887619a0ad3bbc04b812392c1767db4b"
+    },
+    "state/runtime_state_v1.json": {
+      "bytes": 1982,
+      "sha256": "6645a836642570c68f71b84afa90f6b3b2ac77b140b385c8a2e0909f068faf54"
+    }
+  },
+  "full_task_records": 15826,
+  "incremental_formal_manifest_sha256": "3d0a0c107f5b6f86c23f220aebcbeff9b3466aca9c967847e871064391fae849",
+  "incremental_task_records": 13001,
+  "protocol_id": "MIRNA_QA_V4FLASH_COVERAGE_COMPLETION_V1",
+  "rag_started": false,
+  "rejected_or_no_qa_records": 1225,
+  "release_id": "FULL_CORPUS_MIRNA_QA_RELEASE_V2",
+  "sft_started": false,
+  "status": "FULL_CORPUS_MIRNA_QA_GENERATION_COMPLETE_READY_FOR_RAG_SFT"
+}

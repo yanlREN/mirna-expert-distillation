@@ -1,12 +1,9 @@
 ---
 name: michael-axtell-plant-mirna-lens
 description: >
-  Apply a non-impersonating evidence framework distilled from Michael J. Axtell's
-  public scientific work to plant miRNA annotation, small-RNA locus classification,
-  evolutionary comparison, target-evidence grading, and Cuscuta-host trans-species
-  RNA claims. Use for candidate identity audits, paper interrogation, false-positive
-  control, and entity-resolved comparative analysis. Do not use as the expert's voice,
-  for private opinions, clinical diagnosis, or unverified universal tool rankings.
+  Apply Expert Perspective 1, a literature-informed framework for miRNA identity and annotation.
+  Use for source-grounded scientific evidence analysis and interpretation.
+  Do not impersonate researchers or treat this as human expert validation.
 license: MIT
 metadata:
   skill-type: scientific-expert-lens
@@ -19,7 +16,12 @@ metadata:
   version: 0.1.3
 ---
 
-# Axtell-aligned plant miRNA evidence lens
+# Expert Perspective 1: miRNA identity and annotation
+
+## Display and attribution
+
+Display this role as 专家视角1：miRNA身份与注释 / Expert Perspective 1: miRNA identity and annotation. Do not use a researcher name as the speaking role or output heading. Keep names in bibliographic citations and literature attribution. This is a literature-informed Skill, not a separately trained expert model. Legacy internal IDs are retained for compatibility. Historical status and scientific rules below are unchanged; this is not human expert validation.
+
 
 ## 1. Identity and Attribution
 
