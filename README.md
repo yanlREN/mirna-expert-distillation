@@ -1,156 +1,199 @@
 # miRNA Five-Lens Scientific Panel for WorkBuddy
 
-[中文](README.md) | [English](README_EN.md)
+[English](README.md) | [中文](README_ZH.md)
 
-一个面向 miRNA、植物 small RNA、RNA silencing 与跨界 RNA 问题的五视角科研分析 Skill。它会让同一问题依次经过 专家视角1、专家视角2、专家视角3、专家视角4 和 专家视角5 五套公开研究框架，并保留各自关注点、证据边界、分歧与后续问题。
+A five-perspective research-analysis Skill for questions involving miRNAs,
+plant small RNAs, RNA silencing, and cross-kingdom RNA. It applies five public
+research frameworks to the same question while preserving each perspective's
+focus, evidence boundary, disagreements, and follow-up questions.
 
-> **发布状态：GitHub 公开候选 / prerelease。** 四个 Lens 保留历史项目内部验证状态（非人工专家确认）；专家视角5 Lens 仅为 `supervised_preview`，尚未通过正式发布门禁。这个状态必须在使用界面、输出和二次分发中保留。
+> **Release status: GitHub public candidate / prerelease.** Perspectives 1–4
+> retain historical project-internal `validated` status, which is not human
+> expert confirmation. Perspective 5 remains `supervised_preview` and has not
+> passed the formal release gate. These labels must remain visible in use and
+> redistribution.
 
-## 文献来源与命名
+## Literature basis and role names
 
-本项目是文献引导的分析Skill，没有训练五个独立模型。姓名仅用于来源归属。
-五个视角主要参考Axtell、Chen、Meyers、Carrington、Jin及各自合作者的公开研究，
-同时结合其他团队文献；完整对应关系见[文献归属](skills/mirna-five-lens-panel/references/literature-attribution.md)。
-本项目不声称相关研究者参与了本工具审核或背书，自动化视角不构成人工专家验证。
+This is a literature-guided analysis Skill; five separate expert models were
+not trained. Personal names are used only for source attribution. The five
+perspectives are primarily informed by public work from Axtell, Chen, Meyers,
+Carrington, Jin, their coauthors, and relevant independent groups. See the
+[literature attribution](skills/mirna-five-lens-panel/references/literature-attribution.md).
+The project does not claim that the named researchers reviewed or endorsed the
+tool. Automated perspectives do not constitute human expert validation.
 
-## 它能做什么
+## What it does
 
-- 分析科学问题、论文摘要、结果段、图注或研究设想；
-- 分别列出五个 Lens 最先检查的前提、证据能支持到哪里和缺失对照；
-- 区分 miRNA 身份、直接靶标证据与表型因果；
-- 区分 family、MIR gene family、locus、precursor、mature、5p/3p、isomiR、sequence 与数据库记录；
-- 对跨界 RNA 按 origin → release/carrier → stability → intact uptake → effector access → direct target action → phenotype 逐边审查；
-- 最后汇总共同点、互补关注、必须保留的分歧和最能改变结论的证据。
+- Analyzes scientific questions, abstracts, results passages, figure legends,
+  and research proposals.
+- Separately identifies each perspective's assumptions, evidentiary ceiling,
+  missing controls, and follow-up questions.
+- Distinguishes miRNA identity, direct target evidence, and phenotypic causality.
+- Distinguishes family, MIR gene family, locus, precursor, mature sequence,
+  5p/3p, isomiR, sequence, and database-record entity levels.
+- Audits cross-kingdom RNA claims edge by edge: origin → release/carrier →
+  stability → intact uptake → effector access → direct target action → phenotype.
+- Summarizes shared conclusions, complementary concerns, unresolved differences,
+  and the evidence most likely to change the conclusion.
 
-它不会训练模型，不包含模型权重，不下载原始测序数据，也不会冒充任何专家本人。
+It does not train models, include model weights, download raw sequencing data,
+or impersonate any researcher.
 
-## 五个 Lens 的状态
+## Perspective status
 
-| Lens | 主要关注 | 状态 |
+| Perspective | Primary focus | Status |
 |---|---|---|
-| 专家视角1 | miRNA 身份、注释严格性、miRNA/siRNA 分类与实体层级 | `validated` |
-| 专家视角2 | 植物 miRNA 生物发生、加工、甲基化、AGO 装载与生命周期 | `validated` |
-| 专家视角3 | small-RNA 组学、PARE/degradome、PHAS/phasiRNA 与可重复性 | `validated` |
-| 专家视角4 | DCL/RDR/AGO、tasiRNA、病毒抑制子与 RNA silencing 通路 | `validated` |
-| 专家视角5 | 植物–病原跨界 RNA、载体/摄取、受体作用路径与因果链 | `supervised_preview` |
+| Expert Perspective 1 | miRNA identity, annotation rigor, miRNA/siRNA classification, and entity level | `validated` |
+| Expert Perspective 2 | plant miRNA biogenesis, processing, methylation, AGO loading, and lifecycle | `validated` |
+| Expert Perspective 3 | small-RNA omics, PARE/degradome, PHAS/phasiRNA, and reproducibility | `validated` |
+| Expert Perspective 4 | DCL/RDR/AGO, tasiRNA, viral suppressors, and RNA-silencing pathways | `validated` |
+| Expert Perspective 5 | plant–pathogen cross-kingdom RNA, carriers/uptake, recipient pathways, and causal chains | `supervised_preview` |
 
-`supervised_preview` 不等于“第五位已验证专家”。专家视角5 在独立 N5 回归中仍有 4 个完整性回退案例，因此面板强制显示状态、证据截止日期和逐边停止点。
+`supervised_preview` does not mean “a fifth validated expert.” Perspective 5
+still has four completeness regressions in the independent N5 regression set;
+the panel therefore preserves its status, evidence cutoff, and edge-specific
+stopping points.
 
-## 仓库结构
+## Repository layout
 
 ```text
 .
-├── README.md
-├── README_EN.md
+├── README.md                       # English (default)
+├── README_ZH.md                    # Chinese
 ├── LICENSE
 ├── NOTICE.md
 ├── RELEASE-MANIFEST.yaml
 ├── CHECKSUMS.sha256
 ├── docs/
-├── methods-and-qc/               # 方法、质量控制与审计记录
+├── methods-and-qc/
 ├── skills/
-│   └── mirna-five-lens-panel/       # 自包含 WorkBuddy Skill
+│   └── mirna-five-lens-panel/       # self-contained WorkBuddy Skill
 ├── dist/
 │   └── mirna-five-lens-panel-workbuddy.zip
 └── third-party-licenses/
     └── NUWA-MIT.txt
 ```
 
-面板已内嵌五个 Lens。普通用户只需安装 `mirna-five-lens-panel`，不要再同时启用五个独立副本。
+All five perspectives are embedded in the panel. Ordinary users should install
+only `mirna-five-lens-panel`, rather than enabling five separate copies.
 
-## 快速安装到 WorkBuddy
+## Install in WorkBuddy
 
-### 方法一：界面上传（推荐）
+### Option 1: upload through the interface
 
-1. 从 GitHub Release 下载 `mirna-five-lens-panel-workbuddy.zip`。
-2. 核对 `CHECKSUMS.sha256`。
-3. 打开 WorkBuddy，进入“技能”→“已安装”→“添加技能”→“上传技能”。
-4. 选择下载的 ZIP，等待导入完成。
-5. 新建任务，首次使用建议选择 **Ask / 问一问** 模式。
-6. 在输入区选择 `mirna-five-lens-panel`，然后提问。
+1. Download `mirna-five-lens-panel-workbuddy.zip` from the GitHub Release.
+2. Verify it against `CHECKSUMS.sha256`.
+3. In WorkBuddy, open Skills → Installed → Add Skill → Upload Skill.
+4. Select the ZIP and wait for the import to finish.
+5. Create a task; **Ask** mode is recommended for the first run.
+6. Select `mirna-five-lens-panel` in the input area and enter the question.
 
-WorkBuddy 官方说明支持通过“上传技能”导入本地技能包，并建议安装第三方 Skill 前检查来源、权限与脚本内容：
+WorkBuddy documentation describes importing local skills and recommends
+reviewing a third-party Skill's source, permissions, and scripts before use:
 
-- [WorkBuddy 技能管理](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
-- [WorkBuddy 新建任务与选择技能](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar)
+- [WorkBuddy skill management](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
+- [Creating a task and selecting a skill](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar)
 
-### 方法二：手动复制
+### Option 2: manual copy
 
-将 `skills/mirna-five-lens-panel` 整个目录复制到用户级 Skills 目录：
+Copy the complete `skills/mirna-five-lens-panel` directory to the user Skills
+directory:
 
 ```text
-Windows: C:\Users\<你的用户名>\.workbuddy\skills\mirna-five-lens-panel
+Windows: C:\Users\<username>\.workbuddy\skills\mirna-five-lens-panel
 macOS/Linux: ~/.workbuddy/skills/mirna-five-lens-panel
 ```
 
-随后完全退出并重新打开 WorkBuddy。如果你的 WorkBuddy 版本使用不同位置，以其界面显示的本地技能目录为准。
+Completely exit and restart WorkBuddy. If your WorkBuddy version shows a
+different local Skills directory, use the location displayed by that version.
+See [the installation guide](docs/INSTALL-WORKBUDDY.md) for troubleshooting.
 
-完整步骤与故障排除见 [docs/INSTALL-WORKBUDDY.md](docs/INSTALL-WORKBUDDY.md)。
-
-## 最小使用示例
+## Minimal prompt
 
 ```text
-请用五视角科学面板分析下面的问题：
+Use the five-perspective scientific panel to analyze the following material:
 
-[粘贴问题、摘要、结果或图注]
+[Paste a question, abstract, results passage, or figure legend]
 
-请分别给出 专家视角1、专家视角2、专家视角3、专家视角4 和 专家视角5 五个 Lens 的：
-1. 适用性；
-2. 最关注的问题；
-3. 当前证据能支持到哪里；
-4. 证据缺口；
-5. 最值得追问的 2–4 个问题。
+For Expert Perspectives 1–5, separately report:
+1. applicability;
+2. primary concerns;
+3. the strongest conclusion supported by the current evidence;
+4. evidence gaps;
+5. the 2–4 most useful follow-up questions.
 
-最后列出共同点、互补关注、必须保留的分歧和最能改变结论的下一步证据。
-不要用多数投票决定科学结论；专家视角5 必须标记为 supervised_preview。
+Then summarize common ground, complementary concerns, disagreements that must
+remain explicit, and the next evidence most likely to change the conclusion.
+Do not decide scientific truth by majority vote. Mark Perspective 5 as
+supervised_preview.
 ```
 
-更多模板见 [docs/USAGE.md](docs/USAGE.md)。
+Additional templates are available in [docs/USAGE.md](docs/USAGE.md).
 
-## 科学与身份边界
+## Scientific and identity boundaries
 
-- 输出是 Agent 对公开研究框架的应用，不是专家本人发言，也不代表专家当前意见或背书。
-- 多位 Lens 一致不是多个独立实验室的证据，不能通过投票决定科学事实。
-- 数据库收录、预测发卡、靶标预测、PARE 峰或表达反相关都各有明确结论上限。
-- 新问题上的判断默认是 `agent_inference`；只有来源实际支持时才能写成 `documented_framework`。
-- 证据截止为 **2026-07-17**；涉及之后的新论文、文章更正或撤稿时应重新核验原始来源。
-- 该工具不能替代原论文阅读、统计复核、实验验证、临床判断或领域同行评审。
+- Outputs are agent applications of public research frameworks, not statements
+  by the named researchers and not evidence of their current views or endorsement.
+- Agreement among perspectives is not evidence from independent laboratories;
+  scientific truth must not be decided by voting.
+- Database inclusion, predicted hairpins, target predictions, PARE peaks, and
+  inverse expression each have a limited evidentiary ceiling.
+- Judgments on new material default to `agent_inference`; use
+  `documented_framework` only when the cited source actually supports the claim.
+- The evidence cutoff is **2026-07-17**. Later publications, corrections, or
+  retractions require renewed source verification.
+- The Skill does not replace reading the source papers, statistical review,
+  experimental validation, clinical judgment, or domain peer review.
 
-详见 [docs/SCIENTIFIC-LIMITATIONS.md](docs/SCIENTIFIC-LIMITATIONS.md)。
+See [scientific limitations](docs/SCIENTIFIC-LIMITATIONS.md).
 
-## 安全说明
+## Security
 
-本候选包不包含可执行脚本、二进制程序、账户凭据、网络连接器或自动写文件逻辑；其内容为 Markdown、YAML 和 JSONL 形式的指令、元数据、结构化证据摘要及合法链接。用户输入如何被模型服务处理仍取决于 WorkBuddy 的模型、权限和隐私设置。
+The candidate Skill package contains no executable scripts, binaries, account
+credentials, network connectors, or automatic file-writing logic. It contains
+Markdown, YAML, and JSONL instructions, metadata, structured evidence summaries,
+and lawful links. How user input is processed still depends on the selected
+WorkBuddy model, permissions, and privacy settings.
 
-安装第三方 Skill 前请自行检查包内容和 SHA-256。不要把未公开数据、患者资料、密码、机构凭据或受限全文直接粘贴给未知模型服务。详见 [SECURITY.md](SECURITY.md)。
+Review third-party Skill contents and SHA-256 values before installation. Do not
+send unpublished data, patient information, passwords, institutional credentials,
+or restricted full text to an untrusted model service. See [SECURITY.md](SECURITY.md).
 
-## 验证状态
+## Validation status
 
-- 面板和五个内嵌 Lens 均通过 Skill 结构检查；
-- JSONL 可解析，引用文件闭包完整；
-- 包内没有 PDF、原始测序数据、模型权重、缓存或凭据；
-- ZIP 内容和 SHA-256 在生成时重新核验；
-- 原项目权威状态仍是 `partial_release_candidate`，本仓库是独立的 GitHub 公开候选，不把 专家视角5 改判为 validated。
+- The panel and all five embedded perspectives pass Skill structure validation.
+- JSONL records parse successfully and referenced local files are present.
+- The package contains no PDFs, raw sequencing data, model weights, caches, or credentials.
+- ZIP contents and SHA-256 values were regenerated and verified.
+- The authoritative project state remains `partial_release_candidate`; this
+  repository does not promote Perspective 5 to `validated`.
 
-详细结果见 [docs/VALIDATION.md](docs/VALIDATION.md)。
+See [docs/VALIDATION.md](docs/VALIDATION.md) for the exact scope and limitations.
 
-## 方法与质量控制材料
+## Methods and quality-control materials
 
-见[方法与质量控制索引](methods-and-qc/README.md)。该目录区分历史报告、
-可复核的方法材料和仍待完成的人工验证/数据划分审计，不把程序PASS称为生物学准确率。
+The [methods and quality-control directory](methods-and-qc/README.md) separates
+archived reports, reproducible methods evidence, and validation/split audits
+that remain outstanding. A programmatic PASS is not presented as biological accuracy.
 
-## 上传 GitHub 前
+## Before redistributing
 
-1. 完整上传本目录内容，不要只上传 `SKILL.md`。
-2. 首次 GitHub Release 标为 **Pre-release**，不要标为 production-ready。
-3. 将 `dist/mirna-five-lens-panel-workbuddy.zip` 与 `CHECKSUMS.sha256` 一起作为 Release assets。
-4. 保留 `LICENSE`、`NOTICE.md`、`RELEASE-MANIFEST.yaml` 和 专家视角5 的 `supervised_preview` 标记。
-5. 不要加入论文 PDF、缓存、原始测序数据、模型文件或访问凭据。
+1. Distribute the complete repository, not `SKILL.md` alone.
+2. Mark the first GitHub Release as **Pre-release**, not production-ready.
+3. Attach `dist/mirna-five-lens-panel-workbuddy.zip` and `CHECKSUMS.sha256`.
+4. Preserve `LICENSE`, `NOTICE.md`, `RELEASE-MANIFEST.yaml`, and the
+   `supervised_preview` label for Perspective 5.
+5. Do not add paper PDFs, caches, raw sequencing data, model files, or credentials.
 
-发布与复核步骤见 [docs/GITHUB-PUBLISHING.md](docs/GITHUB-PUBLISHING.md)。
+See [GitHub publishing guidance](docs/GITHUB-PUBLISHING.md).
 
-## 许可证与来源
+## License and attribution
 
-本候选包的原创指令、文档和结构化代码材料按 [MIT License](LICENSE) 提供。Nuwa 上游方法框架的 MIT 许可证保存在 [third-party-licenses/NUWA-MIT.txt](third-party-licenses/NUWA-MIT.txt)。论文、数据库和第三方网页仍归各自权利人所有；本仓库不重新分发论文全文。
+Original instructions, documentation, and structured code materials in this
+candidate are provided under the [MIT License](LICENSE). The upstream Nuwa MIT
+license is preserved in [third-party-licenses/NUWA-MIT.txt](third-party-licenses/NUWA-MIT.txt).
+Papers, databases, and third-party websites remain the property of their respective
+rightsholders; this repository does not redistribute paper full text.
 
-完整归属与非背书声明见 [NOTICE.md](NOTICE.md)。
+See [NOTICE.md](NOTICE.md) for attribution and non-endorsement details.

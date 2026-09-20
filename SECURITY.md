@@ -1,23 +1,42 @@
 # Security
 
+[English](SECURITY.md) | [中文](SECURITY_ZH.md)
+
 ## Package capabilities
 
-此候选包只包含 Markdown、YAML 和 JSONL 文件，不包含脚本、可执行文件、二进制程序、网络连接器、自动文件写入逻辑或账户凭据。它本身不会下载数据、调用第三方 API 或训练模型。
+The installable Skill ZIP contains Markdown, YAML, and JSONL files only. It
+contains no scripts, executables, network connectors, automatic file-writing
+logic, or account credentials. By itself, it does not download data, call
+third-party APIs, or train models.
 
-WorkBuddy 运行时使用的模型、网络、日志和权限由用户的 WorkBuddy 配置决定，不由本仓库控制。
+The repository also contains historical quality-checking reference code under
+`methods-and-qc/reference-code/`. Those files are not included in the
+installable Skill ZIP and do not run automatically when the Skill is installed.
 
-## 安装前检查
+The model service, network access, logging, and permissions used at runtime are
+determined by the user's WorkBuddy configuration and are not controlled by this
+repository.
 
-1. 从可信仓库或 GitHub Release 下载。
-2. 使用 `CHECKSUMS.sha256` 核对 ZIP 和 Skill 文件。
-3. 解压检查仅包含预期的 `.md`、`.yaml` 和 `.jsonl` 文件。
-4. 检查 `SKILL.md` 是否仍明确禁止冒充专家，并保留 Jin 的 `supervised_preview` 状态。
-5. 首次在 Ask / 问一问模式中使用，不授予不必要的文件或系统权限。
+## Before installation
 
-## 数据隐私
+1. Download from a trusted repository or GitHub Release.
+2. Verify the ZIP and Skill files against `CHECKSUMS.sha256`.
+3. Confirm that the archive contains only the expected `.md`, `.yaml`, and
+   `.jsonl` files.
+4. Confirm that `SKILL.md` still prohibits researcher impersonation and retains
+   the `supervised_preview` status of Expert Perspective 5.
+5. Use Ask mode for the first run and grant no unnecessary filesystem or system permissions.
 
-不要向未知模型服务提交患者身份信息、未公开实验数据、密码、API 密钥、机构订阅凭据、受限论文全文或其他敏感材料。若需要分析未公开科研内容，应先确认 WorkBuddy 所选模型和组织政策允许相应数据处理。
+## Data privacy
 
-## 报告问题
+Do not submit patient identifiers, unpublished experimental data, passwords,
+API keys, institutional subscription credentials, restricted paper full text,
+or other sensitive material to an untrusted model service. Before analyzing
+unpublished research, confirm that the selected WorkBuddy model and applicable
+organizational policy permit that data processing.
 
-提交安全问题时，请说明：包版本、文件哈希、WorkBuddy 版本、复现步骤、实际行为和预期行为。不要在公开 Issue 中粘贴凭据、私人数据或受版权保护全文。
+## Reporting security issues
+
+Include the package version, file hash, WorkBuddy version, reproduction steps,
+observed behavior, and expected behavior. Do not post credentials, private data,
+or copyrighted full text in a public issue.
