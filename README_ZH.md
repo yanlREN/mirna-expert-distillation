@@ -2,12 +2,11 @@
 
 [中文](README_ZH.md) | [English](README.md)
 
-## QA 与关系数据
+## QA 数据集
 
-**[下载 QA、关系及文献来源数据（ZIP）](https://github.com/yanlREN/mirna-expert-distillation/releases/download/mirna-training-data-v1-20260928/miRNA_QA_and_relations_v1.zip)**
+**[下载 QA 及文献来源数据（ZIP）](https://github.com/yanlREN/mirna-expert-distillation/releases/download/mirna-training-data-v1-20260928/miRNA_QA_dataset_v1.zip)**
 
-压缩包包含三个 UTF-8 JSONL 数据文件及中英文 `README.md`：`qa.jsonl` 包含 **75,076 条 QA**，
-`relations.jsonl` 包含 **5,129 条聚合 miRNA 关系**，
+压缩包包含两个 UTF-8 JSONL 数据文件及中英文 `README.md`：`qa.jsonl` 包含 **75,076 条 QA**，
 `publications.jsonl` 提供对应的文献标识、标题和 DOI。缺失 DOI 写为 `null`，
 通过 `paper_id` 关联来源。字段和引用说明见
 [数据集介绍](https://github.com/yanlREN/mirna-expert-distillation/releases/tag/mirna-training-data-v1-20260928)及压缩包内的 README。

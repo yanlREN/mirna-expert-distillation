@@ -2,12 +2,11 @@
 
 [English](README.md) | [中文](README_ZH.md)
 
-## QA and relation data
+## QA dataset
 
-**[Download QA, relations and source references (ZIP)](https://github.com/yanlREN/mirna-expert-distillation/releases/download/mirna-training-data-v1-20260928/miRNA_QA_and_relations_v1.zip)**
+**[Download QA and source references (ZIP)](https://github.com/yanlREN/mirna-expert-distillation/releases/download/mirna-training-data-v1-20260928/miRNA_QA_dataset_v1.zip)**
 
-The archive contains three UTF-8 JSONL files: `qa.jsonl` with **75,076 QA records**,
-`relations.jsonl` with **5,129 aggregated miRNA relations**, and
+The archive contains two UTF-8 JSONL files: `qa.jsonl` with **75,076 QA records** and
 `publications.jsonl` with corresponding publication identifiers, titles and DOIs.
 Unavailable DOIs are represented as `null`. Source references are linked by
 `paper_id`. See the [dataset description](https://github.com/yanlREN/mirna-expert-distillation/releases/tag/mirna-training-data-v1-20260928)
