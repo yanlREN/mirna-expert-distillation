@@ -2,16 +2,16 @@
 
 [English](README.md) | [中文](README_ZH.md)
 
-## QA corpus data
+## QA and relation data
 
-**[Download the complete QA dataset (ZIP)](https://github.com/yanlREN/mirna-expert-distillation/releases/download/mirna-qa-corpus-v2.1-20260928/miRNA_QA_Corpus_v2.1_20260928.zip)**
+**[Download QA, relations and source references (ZIP)](https://github.com/yanlREN/mirna-expert-distillation/releases/download/mirna-training-data-v1-20260928/miRNA_QA_and_relations_v1.zip)**
 
-miRNA QA Corpus v2.1 contains **75,076 question–answer records** associated with
-**4,537 canonical publications**. The single archive includes the complete
-JSONL dataset, source bibliography with available DOI links, data dictionary,
-provenance and quality flags, citation information and SHA256 checksums.
-See the [dataset description and use considerations](https://github.com/yanlREN/mirna-expert-distillation/releases/tag/mirna-qa-corpus-v2.1-20260928)
-for DOI coverage, unresolved sources, retraction flags and duplicate records.
+The archive contains three UTF-8 JSONL files: `qa.jsonl` with **75,076 QA records**,
+`relations.jsonl` with **5,129 aggregated miRNA relations**, and
+`publications.jsonl` with corresponding publication identifiers, titles and DOIs.
+Unavailable DOIs are represented as `null`. Source references are linked by
+`paper_id`. See the [dataset description](https://github.com/yanlREN/mirna-expert-distillation/releases/tag/mirna-training-data-v1-20260928)
+for field definitions and citation information.
 
 ## Analysis Skill
 

@@ -2,14 +2,15 @@
 
 [中文](README_ZH.md) | [English](README.md)
 
-## QA 语料数据
+## QA 与关系数据
 
-**[下载完整 QA 数据包（ZIP）](https://github.com/yanlREN/mirna-expert-distillation/releases/download/mirna-qa-corpus-v2.1-20260928/miRNA_QA_Corpus_v2.1_20260928.zip)**
+**[下载 QA、关系及文献来源数据（ZIP）](https://github.com/yanlREN/mirna-expert-distillation/releases/download/mirna-training-data-v1-20260928/miRNA_QA_and_relations_v1.zip)**
 
-miRNA QA Corpus v2.1 包含来自 **4,537 篇规范化文献的 75,076 条问答记录**。
-一个压缩包即包含完整 JSONL 数据、附可用 DOI 的文献来源表、字段字典、溯源与质量标记、引用说明及 SHA256 校验。
-DOI 覆盖、未确认来源、撤稿标记和重复记录说明见
-[数据集介绍与使用注意事项](https://github.com/yanlREN/mirna-expert-distillation/releases/tag/mirna-qa-corpus-v2.1-20260928)。
+压缩包仅含三个 UTF-8 JSONL 文件：`qa.jsonl` 包含 **75,076 条 QA**，
+`relations.jsonl` 包含 **5,129 条聚合 miRNA 关系**，
+`publications.jsonl` 提供对应的文献标识、标题和 DOI。缺失 DOI 写为 `null`，
+通过 `paper_id` 关联来源。字段和引用说明见
+[数据集介绍](https://github.com/yanlREN/mirna-expert-distillation/releases/tag/mirna-training-data-v1-20260928)。
 
 ## 分析 Skill
 
