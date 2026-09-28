@@ -2,6 +2,15 @@
 
 [中文](README_ZH.md) | [English](README.md)
 
+## QA 语料数据
+
+[miRNA QA Corpus v2.1 数据包](https://github.com/yanlREN/mirna-expert-distillation/releases/tag/mirna-qa-corpus-v2.1-20260928)
+包含全部 75,076 条已提供 QA、文献来源表、可用 DOI 链接、溯源说明、字段字典和 SHA256 校验。
+4,538 个来源 ID 对应 4,537 篇规范化文献；74,436 条 QA 附 DOI，另有来自 48 个来源的 640 条 QA 的 DOI 尚未确认。
+该完整存档版保留并标记已知撤稿来源及完全重复内容，不代表新增生物学验证或训练就绪认证。旧数据版本继续保留。
+
+下文介绍的是独立的分析 Skill，而不是 QA 数据包。完整数据 ZIP 请从上述版本化发布页下载。
+
 一个面向 miRNA、植物 small RNA、RNA silencing 与跨界 RNA 问题的五视角科研分析 Skill。它会让同一问题依次经过 专家视角1、专家视角2、专家视角3、专家视角4 和 专家视角5 五套公开研究框架，并保留各自关注点、证据边界、分歧与后续问题。
 
 > **发布状态：GitHub 公开候选 / prerelease。** 四个 Lens 保留历史项目内部验证状态（非人工专家确认）；专家视角5 Lens 仅为 `supervised_preview`，尚未通过正式发布门禁。这个状态必须在使用界面、输出和二次分发中保留。
