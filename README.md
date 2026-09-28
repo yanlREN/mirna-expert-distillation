@@ -11,7 +11,9 @@ The archive contains three UTF-8 JSONL files: `qa.jsonl` with **75,076 QA record
 `publications.jsonl` with corresponding publication identifiers, titles and DOIs.
 Unavailable DOIs are represented as `null`. Source references are linked by
 `paper_id`. See the [dataset description](https://github.com/yanlREN/mirna-expert-distillation/releases/tag/mirna-training-data-v1-20260928)
-for field definitions and citation information.
+for field definitions and citation information. A bilingual `README.md` is
+included in the ZIP with file descriptions, source-lookup instructions and
+citation guidance.
 
 ## Analysis Skill
 
