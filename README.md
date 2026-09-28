@@ -4,17 +4,16 @@
 
 ## QA corpus data
 
-The [miRNA QA Corpus v2.1 data package](https://github.com/yanlREN/mirna-expert-distillation/releases/tag/mirna-qa-corpus-v2.1-20260928)
-contains all 75,076 supplied QA records, a source-publication bibliography,
-available DOI links, provenance notes, a data dictionary and SHA256 checksums.
-Its 4,538 source IDs map to 4,537 canonical publications. DOI identifiers are
-available for 74,436 QA records; 640 records from 48 sources remain unresolved.
-This archival package retains and flags known retracted-source records and
-exact-content duplicates; it is not a new biological validation or a
-training-ready certification. The previous data release remains available.
+**[Download the complete QA dataset (ZIP)](https://github.com/yanlREN/mirna-expert-distillation/releases/download/mirna-qa-corpus-v2.1-20260928/miRNA_QA_Corpus_v2.1_20260928.zip)**
 
-The documentation below describes the separate analysis Skill, not the QA
-data package. Download the versioned data ZIP from the link above.
+miRNA QA Corpus v2.1 contains **75,076 question–answer records** associated with
+**4,537 canonical publications**. The single archive includes the complete
+JSONL dataset, source bibliography with available DOI links, data dictionary,
+provenance and quality flags, citation information and SHA256 checksums.
+See the [dataset description and use considerations](https://github.com/yanlREN/mirna-expert-distillation/releases/tag/mirna-qa-corpus-v2.1-20260928)
+for DOI coverage, unresolved sources, retraction flags and duplicate records.
+
+## Analysis Skill
 
 A five-perspective research-analysis Skill for questions involving miRNAs,
 plant small RNAs, RNA silencing, and cross-kingdom RNA. It applies five public
